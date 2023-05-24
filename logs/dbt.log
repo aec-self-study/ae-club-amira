@@ -1,0 +1,262 @@
+[0m08:33:59.493788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7facabd69f00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7facadc6e710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7facaa89a110>]}
+
+
+============================== 08:33:59.496403 | 3b648136-d817-4cd7-ac15-5707c9a92ffb ==============================
+[0m08:33:59.496403 [info ] [MainThread]: Running with dbt=1.5.0
+[0m08:33:59.497421 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/workspaces/ae-club-amira', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m08:33:59.497878 [info ] [MainThread]: Setting up your profile.
+[0m08:33:59.499190 [error] [MainThread]: Encountered an error:
+'NoneType' object is not subscriptable
+[0m08:33:59.510901 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/cli/requires.py", line 86, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/cli/requires.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/cli/main.py", line 459, in init
+    results = task.run()
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/task/init.py", line 262, in run
+    profile_name = self.get_profile_name_from_current_project()
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/task/init.py", line 141, in get_profile_name_from_current_project
+    return dbt_project["profile"]
+TypeError: 'NoneType' object is not subscriptable
+
+[0m08:33:59.512176 [debug] [MainThread]: Command `dbt init` failed at 08:33:59.511998 after 0.02 seconds
+[0m08:33:59.512703 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7facabd69f00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7facaa89a020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7facaa89b0a0>]}
+[0m08:33:59.513616 [debug] [MainThread]: Flushing usage events
+[0m08:36:47.829724 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff75ffe9f00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff75eab60b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff75eab60e0>]}
+
+
+============================== 08:36:47.832497 | f4557fa7-abf3-4974-a063-f20fdf3e46e9 ==============================
+[0m08:36:47.832497 [info ] [MainThread]: Running with dbt=1.5.0
+[0m08:36:47.833384 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/workspaces/ae-club-amira', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m08:36:47.833955 [info ] [MainThread]: Setting up your profile.
+[0m08:36:47.834755 [error] [MainThread]: Encountered an error:
+'NoneType' object is not subscriptable
+[0m08:36:47.836063 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/cli/requires.py", line 86, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/cli/requires.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/cli/main.py", line 459, in init
+    results = task.run()
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/task/init.py", line 262, in run
+    profile_name = self.get_profile_name_from_current_project()
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/task/init.py", line 141, in get_profile_name_from_current_project
+    return dbt_project["profile"]
+TypeError: 'NoneType' object is not subscriptable
+
+[0m08:36:47.837080 [debug] [MainThread]: Command `dbt init` failed at 08:36:47.836897 after 0.01 seconds
+[0m08:36:47.837693 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff75ffe9f00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff75eab60e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff75eab70a0>]}
+[0m08:36:47.838186 [debug] [MainThread]: Flushing usage events
+[0m08:37:38.956845 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0324b19ea0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0326bea710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f03237c9ea0>]}
+
+
+============================== 08:37:38.959751 | 08406d2c-d3d0-464e-ade5-a69fa37734d5 ==============================
+[0m08:37:38.959751 [info ] [MainThread]: Running with dbt=1.5.0
+[0m08:37:38.960611 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/workspaces/ae-club-amira', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m08:37:38.961177 [info ] [MainThread]: Setting up your profile.
+[0m08:37:38.961898 [error] [MainThread]: Encountered an error:
+'NoneType' object is not subscriptable
+[0m08:37:38.963158 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/cli/requires.py", line 86, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/cli/requires.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/cli/main.py", line 459, in init
+    results = task.run()
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/task/init.py", line 262, in run
+    profile_name = self.get_profile_name_from_current_project()
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/task/init.py", line 141, in get_profile_name_from_current_project
+    return dbt_project["profile"]
+TypeError: 'NoneType' object is not subscriptable
+
+[0m08:37:38.964296 [debug] [MainThread]: Command `dbt init` failed at 08:37:38.964076 after 0.01 seconds
+[0m08:37:38.964858 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0324b19ea0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f03237c9db0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f03237cb040>]}
+[0m08:37:38.965490 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-05-24 08:41:43.354062 | 5783a076-bc1e-4296-b5a8-692a5f6ea5d9 ==============================
+[0m08:41:43.354062 [info ] [MainThread]: Running with dbt=1.4.6
+[0m08:41:43.356032 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/vscode/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'coffee_shop_amira', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m08:41:43.356446 [debug] [MainThread]: Tracking: tracking
+[0m08:41:43.358161 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8325b3b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8325b0d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8325b3b80>]}
+[0m08:41:43.358699 [info ] [MainThread]: Creating dbt configuration folder at /home/vscode/.dbt
+[0m08:41:43.359397 [info ] [MainThread]: Setting up your profile.
+[0m08:41:43.360209 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8325b0fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8325b1570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff8325b0a90>]}
+[0m08:41:43.360554 [debug] [MainThread]: Flushing usage events
+[0m08:41:43.788575 [error] [MainThread]: Encountered an error:
+'NoneType' object is not subscriptable
+[0m08:41:43.790628 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/main.py", line 136, in main
+    results, succeeded = handle_and_check(args)
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/main.py", line 206, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/main.py", line 253, in run_from_args
+    results = task.run()
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/task/init.py", line 262, in run
+    profile_name = self.get_profile_name_from_current_project()
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/task/init.py", line 141, in get_profile_name_from_current_project
+    return dbt_project["profile"]
+TypeError: 'NoneType' object is not subscriptable
+
+
+
+============================== 2023-05-24 08:47:30.590531 | bd56b64c-4803-4dd9-a727-859cc3270cf8 ==============================
+[0m08:47:30.590531 [info ] [MainThread]: Running with dbt=1.4.6
+[0m08:47:30.592377 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/vscode/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'coffee_shop_amira', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m08:47:30.592775 [debug] [MainThread]: Tracking: tracking
+[0m08:47:30.594627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2c8a5c3be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2c8a5c0460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2c8a5c3af0>]}
+[0m08:47:30.595213 [info ] [MainThread]: Setting up your profile.
+[0m08:47:30.597597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2c8a5f9780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2c8a5f9840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2c8a5f9960>]}
+[0m08:47:30.598073 [debug] [MainThread]: Flushing usage events
+[0m08:47:31.047770 [error] [MainThread]: Encountered an error:
+while parsing a block mapping
+  in "dbt_project.yml", line 1, column 1
+expected <block end>, but found '<block mapping start>'
+  in "dbt_project.yml", line 14, column 3
+[0m08:47:31.057591 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/main.py", line 136, in main
+    results, succeeded = handle_and_check(args)
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/main.py", line 206, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/main.py", line 253, in run_from_args
+    results = task.run()
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/task/init.py", line 262, in run
+    profile_name = self.get_profile_name_from_current_project()
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/task/init.py", line 140, in get_profile_name_from_current_project
+    dbt_project = yaml.safe_load(f)
+  File "/home/vscode/.local/lib/python3.10/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/home/vscode/.local/lib/python3.10/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/home/vscode/.local/lib/python3.10/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/home/vscode/.local/lib/python3.10/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/home/vscode/.local/lib/python3.10/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/home/vscode/.local/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/home/vscode/.local/lib/python3.10/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/home/vscode/.local/lib/python3.10/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/home/vscode/.local/lib/python3.10/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "dbt_project.yml", line 1, column 1
+expected <block end>, but found '<block mapping start>'
+  in "dbt_project.yml", line 14, column 3
+
+
+
+============================== 2023-05-24 09:51:29.788422 | 2a7574d5-1cf5-48b4-9013-06a068cb9e74 ==============================
+[0m09:51:29.788422 [info ] [MainThread]: Running with dbt=1.4.6
+[0m09:51:29.790179 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/vscode/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'coffee_shop_amira', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m09:51:29.790563 [debug] [MainThread]: Tracking: tracking
+[0m09:51:29.792156 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc5425b3bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc5425b06d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc5425b3ac0>]}
+[0m09:51:29.793351 [debug] [MainThread]: Starter project path: /home/vscode/.local/lib/python3.10/site-packages/dbt/include/starter_project
+
+
+============================== 2023-05-24 09:53:18.005326 | 0ed1e152-0746-49e6-bbb2-691c630013cb ==============================
+[0m09:53:18.005326 [info ] [MainThread]: Running with dbt=1.4.6
+[0m09:53:18.007334 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/vscode/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'coffee_shop_amira', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m09:53:18.007632 [debug] [MainThread]: Tracking: tracking
+[0m09:53:18.009233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fda2cdc3bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fda2cdc06d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fda2cdc3ac0>]}
+[0m09:53:18.010226 [info ] [MainThread]: A project called coffee_shop_amira already exists here.
+[0m09:53:18.010796 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fda2cdc1600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fda2cdc32b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fda2cdc3a30>]}
+[0m09:53:18.011195 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-05-24 09:54:10.105401 | 5144e27a-5965-4d4e-a6d1-285b83bf6337 ==============================
+[0m09:54:10.105401 [info ] [MainThread]: Running with dbt=1.4.6
+[0m09:54:10.107143 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/vscode/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m09:54:10.107495 [debug] [MainThread]: Tracking: tracking
+[0m09:54:10.109277 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f5a3c3b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f5a3c0d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f5a3c3b80>]}
+[0m10:00:57.260923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f5a3c39a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f5a3c0640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f5a3c1570>]}
+[0m10:00:57.261783 [debug] [MainThread]: Flushing usage events
+[0m10:00:57.689314 [error] [MainThread]: Encountered an error:
+
+[0m10:00:57.718344 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/main.py", line 136, in main
+    results, succeeded = handle_and_check(args)
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/main.py", line 206, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/main.py", line 253, in run_from_args
+    results = task.run()
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/task/init.py", line 286, in run
+    project_name = self.get_valid_project_name()
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/task/init.py", line 243, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+  File "/home/vscode/.local/lib/python3.10/site-packages/click/termui.py", line 166, in prompt
+    value = prompt_func(prompt)
+  File "/home/vscode/.local/lib/python3.10/site-packages/click/termui.py", line 149, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+
+
+============================== 2023-05-24 10:03:56.966077 | bb79044b-d5f5-4ebf-8482-04b1660da3c9 ==============================
+[0m10:03:56.966077 [info ] [MainThread]: Running with dbt=1.4.6
+[0m10:03:56.968357 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/workspaces/ae-club-amira', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m10:03:56.968711 [debug] [MainThread]: Tracking: tracking
+[0m10:03:56.970386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc57c7cc6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc57c7cd480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc57c7cc520>]}
+[0m10:03:56.970886 [info ] [MainThread]: Setting up your profile.
+[0m10:04:03.952573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc57c7cc6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc57c7cde70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc57c7ce1d0>]}
+[0m10:04:03.953230 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-05-24 10:04:37.896651 | 49d979ff-f81d-4be6-bf68-14ee299bba75 ==============================
+[0m10:04:37.896651 [info ] [MainThread]: Running with dbt=1.4.6
+[0m10:04:37.898381 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/vscode/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m10:04:37.898761 [debug] [MainThread]: Tracking: tracking
+[0m10:04:37.900770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b109cfc70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b109ccfa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b109cfb80>]}
+[0m10:04:47.484381 [debug] [MainThread]: Starter project path: /home/vscode/.local/lib/python3.10/site-packages/dbt/include/starter_project
+[0m10:05:14.937511 [info ] [MainThread]: Profile coffee_shop written to /home/vscode/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m10:05:14.938690 [info ] [MainThread]: 
+Your new dbt project "coffee_shop" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:05:14.939612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b109cd5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b0e784f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5b0e787790>]}
+[0m10:05:14.940013 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-05-24 11:12:59.226103 | 52865481-3b2f-414e-bc69-ceb14968e814 ==============================
+[0m11:12:59.226103 [info ] [MainThread]: Running with dbt=1.4.6
+[0m11:12:59.231479 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/vscode/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'coffee_shop_amira', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m11:12:59.231919 [debug] [MainThread]: Tracking: tracking
+[0m11:12:59.235500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61fd5d0fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61fd5d1de0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61fd5d0100>]}
+[0m11:12:59.241320 [debug] [MainThread]: Starter project path: /home/vscode/.local/lib/python3.10/site-packages/dbt/include/starter_project
+[0m11:22:21.367625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61fd5d2140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61fd5d1d80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61fd5d1510>]}
+[0m11:22:21.368397 [debug] [MainThread]: Flushing usage events
+[0m11:22:21.806249 [error] [MainThread]: Encountered an error:
+
+[0m11:22:21.846066 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/main.py", line 136, in main
+    results, succeeded = handle_and_check(args)
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/main.py", line 206, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/main.py", line 253, in run_from_args
+    results = task.run()
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/task/init.py", line 304, in run
+    adapter = self.ask_for_adapter_choice()
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/task/init.py", line 230, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+  File "/home/vscode/.local/lib/python3.10/site-packages/click/termui.py", line 166, in prompt
+    value = prompt_func(prompt)
+  File "/home/vscode/.local/lib/python3.10/site-packages/click/termui.py", line 149, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
