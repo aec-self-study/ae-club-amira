@@ -1,0 +1,21 @@
+version: 2
+ 
+sources:
+  - name: coffee_shop
+    description: cleaned up data from orders table 
+    project: analytics-engineers-club
+    tables:
+      - name: customers
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+ 
+      - name: orders
+        description: cleaned up date from orders table
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
