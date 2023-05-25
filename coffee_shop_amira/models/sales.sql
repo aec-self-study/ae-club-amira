@@ -3,7 +3,7 @@
 WITH sales AS (
     SELECT
       order_items.id AS sale_id,
-      date_trunc(orders.created_at, day) AS order_date
+      date_trunc(orders.created_at, day) AS order_date,
       orders.customer_id,
       products.category AS product_category,
       product_prices.price AS revenue
